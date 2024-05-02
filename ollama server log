@@ -1,0 +1,166 @@
+time=2024-05-02T09:14:26.004+08:00 level=INFO source=images.go:817 msg="total blobs: 20"
+time=2024-05-02T09:14:26.039+08:00 level=INFO source=images.go:824 msg="total unused blobs removed: 0"
+time=2024-05-02T09:14:26.041+08:00 level=INFO source=routes.go:1143 msg="Listening on 127.0.0.1:11434 (version 0.1.32)"
+time=2024-05-02T09:14:26.095+08:00 level=INFO source=payload.go:28 msg="extracting embedded files" dir=C:\Users\panda\AppData\Local\Temp\ollama2662093108\runners
+time=2024-05-02T09:14:26.096+08:00 level=DEBUG source=payload.go:160 msg=extracting variant=cpu file=build/windows/amd64/cpu/bin/llama.dll.gz
+time=2024-05-02T09:14:26.096+08:00 level=DEBUG source=payload.go:160 msg=extracting variant=cpu file=build/windows/amd64/cpu/bin/ollama_llama_server.exe.gz
+time=2024-05-02T09:14:26.096+08:00 level=DEBUG source=payload.go:160 msg=extracting variant=cpu_avx file=build/windows/amd64/cpu_avx/bin/llama.dll.gz
+time=2024-05-02T09:14:26.096+08:00 level=DEBUG source=payload.go:160 msg=extracting variant=cpu_avx file=build/windows/amd64/cpu_avx/bin/ollama_llama_server.exe.gz
+time=2024-05-02T09:14:26.096+08:00 level=DEBUG source=payload.go:160 msg=extracting variant=cpu_avx2 file=build/windows/amd64/cpu_avx2/bin/llama.dll.gz
+time=2024-05-02T09:14:26.096+08:00 level=DEBUG source=payload.go:160 msg=extracting variant=cpu_avx2 file=build/windows/amd64/cpu_avx2/bin/ollama_llama_server.exe.gz
+time=2024-05-02T09:14:26.096+08:00 level=DEBUG source=payload.go:160 msg=extracting variant=cuda_v11.3 file=build/windows/amd64/cuda_v11.3/bin/llama.dll.gz
+time=2024-05-02T09:14:26.096+08:00 level=DEBUG source=payload.go:160 msg=extracting variant=cuda_v11.3 file=build/windows/amd64/cuda_v11.3/bin/ollama_llama_server.exe.gz
+time=2024-05-02T09:14:26.096+08:00 level=DEBUG source=payload.go:160 msg=extracting variant=rocm_v5.7 file=build/windows/amd64/rocm_v5.7/bin/llama.dll.gz
+time=2024-05-02T09:14:26.096+08:00 level=DEBUG source=payload.go:160 msg=extracting variant=rocm_v5.7 file=build/windows/amd64/rocm_v5.7/bin/ollama_llama_server.exe.gz
+time=2024-05-02T09:14:26.377+08:00 level=DEBUG source=payload.go:68 msg="availableServers : found" file=C:\Users\panda\AppData\Local\Temp\ollama2662093108\runners\cpu
+time=2024-05-02T09:14:26.377+08:00 level=DEBUG source=payload.go:68 msg="availableServers : found" file=C:\Users\panda\AppData\Local\Temp\ollama2662093108\runners\cpu_avx
+time=2024-05-02T09:14:26.377+08:00 level=DEBUG source=payload.go:68 msg="availableServers : found" file=C:\Users\panda\AppData\Local\Temp\ollama2662093108\runners\cpu_avx2
+time=2024-05-02T09:14:26.377+08:00 level=DEBUG source=payload.go:68 msg="availableServers : found" file=C:\Users\panda\AppData\Local\Temp\ollama2662093108\runners\cuda_v11.3
+time=2024-05-02T09:14:26.377+08:00 level=DEBUG source=payload.go:68 msg="availableServers : found" file=C:\Users\panda\AppData\Local\Temp\ollama2662093108\runners\rocm_v5.7
+time=2024-05-02T09:14:26.377+08:00 level=INFO source=payload.go:41 msg="Dynamic LLM libraries [cpu_avx cpu_avx2 cuda_v11.3 rocm_v5.7 cpu]"
+time=2024-05-02T09:14:26.378+08:00 level=DEBUG source=payload.go:42 msg="Override detection logic by setting OLLAMA_LLM_LIBRARY"
+[GIN] 2024/05/02 - 09:14:46 | 200 |            0s |       127.0.0.1 | HEAD     "/"
+[GIN] 2024/05/02 - 09:14:46 | 200 |     20.2964ms |       127.0.0.1 | POST     "/api/show"
+[GIN] 2024/05/02 - 09:14:46 | 200 |       516.7µs |       127.0.0.1 | POST     "/api/show"
+time=2024-05-02T09:14:46.471+08:00 level=DEBUG source=gguf.go:57 msg="model = &llm.gguf{containerGGUF:(*llm.containerGGUF)(0xc00007b380), kv:llm.KV{}, tensors:[]*llm.Tensor(nil), parameters:0x0}"
+time=2024-05-02T09:14:48.712+08:00 level=DEBUG source=gguf.go:193 msg="general.architecture = gemma"
+time=2024-05-02T09:14:48.717+08:00 level=INFO source=gpu.go:121 msg="Detecting GPU type"
+time=2024-05-02T09:14:48.717+08:00 level=INFO source=gpu.go:268 msg="Searching for GPU management library cudart64_*.dll"
+time=2024-05-02T09:14:48.717+08:00 level=DEBUG source=gpu.go:286 msg="gpu management search paths: [C:\\Users\\panda\\AppData\\Local\\Programs\\Ollama\\cudart64_*.dll c:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v*\\bin\\cudart64_*.dll D:\\tool\\python\\Scripts\\cudart64_*.dll* D:\\tool\\python\\cudart64_*.dll* D:\\software\\program\\vmware\\bin\\cudart64_*.dll* C:\\WINDOWS\\system32\\cudart64_*.dll* C:\\WINDOWS\\cudart64_*.dll* C:\\WINDOWS\\System32\\Wbem\\cudart64_*.dll* C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\cudart64_*.dll* C:\\WINDOWS\\System32\\OpenSSH\\cudart64_*.dll* C:\\Program Files\\Cloudflare\\Cloudflare WARP\\cudart64_*.dll* D:\\tool\\js\\node\\cudart64_*.dll* D:\\tool\\common\\Git\\cmd\\cudart64_*.dll* D:\\tool\\java\\gradle-8.7\\bin\\cudart64_*.dll* D:\\tool\\java\\jdk21\\bin\\cudart64_*.dll* C:\\Program Files\\Docker\\Docker\\resources\\bin\\cudart64_*.dll* C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\cudart64_*.dll* D:\\Windows Kits\\10\\Windows Performance Toolkit\\cudart64_*.dll* C:\\Program Files\\dotnet\\cudart64_*.dll* C:\\Users\\panda\\AppData\\Local\\Microsoft\\WindowsApps\\cudart64_*.dll* D:\\tool\\ide\\Microsoft VS Code\\bin\\cudart64_*.dll* C:\\Users\\panda\\AppData\\Roaming\\npm\\cudart64_*.dll* C:\\Users\\panda\\AppData\\Local\\Programs\\Ollama\\cudart64_*.dll* C:\\Users\\panda\\AppData\\Local\\Programs\\Ollama\\cudart64_*.dll* C:\\Users\\panda\\.dotnet\\tools\\cudart64_*.dll*]"
+time=2024-05-02T09:14:48.723+08:00 level=INFO source=gpu.go:314 msg="Discovered GPU libraries: [C:\\Users\\panda\\AppData\\Local\\Programs\\Ollama\\cudart64_110.dll]"
+time=2024-05-02T09:14:48.752+08:00 level=INFO source=gpu.go:343 msg="Unable to load cudart CUDA management library C:\\Users\\panda\\AppData\\Local\\Programs\\Ollama\\cudart64_110.dll: your nvidia driver is too old or missing, please upgrade to run ollama"
+time=2024-05-02T09:14:48.752+08:00 level=INFO source=gpu.go:268 msg="Searching for GPU management library nvml.dll"
+time=2024-05-02T09:14:48.752+08:00 level=DEBUG source=gpu.go:286 msg="gpu management search paths: [c:\\Windows\\System32\\nvml.dll D:\\tool\\python\\Scripts\\nvml.dll* D:\\tool\\python\\nvml.dll* D:\\software\\program\\vmware\\bin\\nvml.dll* C:\\WINDOWS\\system32\\nvml.dll* C:\\WINDOWS\\nvml.dll* C:\\WINDOWS\\System32\\Wbem\\nvml.dll* C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\nvml.dll* C:\\WINDOWS\\System32\\OpenSSH\\nvml.dll* C:\\Program Files\\Cloudflare\\Cloudflare WARP\\nvml.dll* D:\\tool\\js\\node\\nvml.dll* D:\\tool\\common\\Git\\cmd\\nvml.dll* D:\\tool\\java\\gradle-8.7\\bin\\nvml.dll* D:\\tool\\java\\jdk21\\bin\\nvml.dll* C:\\Program Files\\Docker\\Docker\\resources\\bin\\nvml.dll* C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\nvml.dll* D:\\Windows Kits\\10\\Windows Performance Toolkit\\nvml.dll* C:\\Program Files\\dotnet\\nvml.dll* C:\\Users\\panda\\AppData\\Local\\Microsoft\\WindowsApps\\nvml.dll* D:\\tool\\ide\\Microsoft VS Code\\bin\\nvml.dll* C:\\Users\\panda\\AppData\\Roaming\\npm\\nvml.dll* C:\\Users\\panda\\AppData\\Local\\Programs\\Ollama\\nvml.dll* C:\\Users\\panda\\AppData\\Local\\Programs\\Ollama\\nvml.dll* C:\\Users\\panda\\.dotnet\\tools\\nvml.dll*]"
+time=2024-05-02T09:14:48.756+08:00 level=INFO source=gpu.go:314 msg="Discovered GPU libraries: []"
+time=2024-05-02T09:14:48.756+08:00 level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-05-02T09:14:48.847+08:00 level=INFO source=amd_windows.go:40 msg="AMD Driver: 50732000"
+time=2024-05-02T09:14:48.847+08:00 level=DEBUG source=amd_common.go:16 msg="evaluating potential rocm lib dir C:\\Users\\panda\\AppData\\Local\\Programs\\Ollama\\rocm"
+time=2024-05-02T09:14:48.848+08:00 level=DEBUG source=amd_windows.go:148 msg="detected ROCM next to ollama executable C:\\Users\\panda\\AppData\\Local\\Programs\\Ollama\\rocm"
+time=2024-05-02T09:14:48.848+08:00 level=DEBUG source=amd_windows.go:66 msg="skipping rocm gfx compatibility check with HSA_OVERRIDE_GFX_VERSION=11.0.2"
+time=2024-05-02T09:14:48.848+08:00 level=INFO source=amd_windows.go:69 msg="detected 1 hip devices"
+time=2024-05-02T09:14:48.848+08:00 level=INFO source=amd_windows.go:87 msg="[0] Name: AMD Radeon RX 6750 GRE 12GB"
+time=2024-05-02T09:14:48.848+08:00 level=INFO source=amd_windows.go:90 msg="[0] GcnArchName: gfx1031"
+time=2024-05-02T09:14:49.452+08:00 level=INFO source=amd_windows.go:117 msg="[0] Total Mem: 12733906944"
+time=2024-05-02T09:14:49.452+08:00 level=INFO source=amd_windows.go:118 msg="[0] Free Mem:  12868124672"
+time=2024-05-02T09:14:49.452+08:00 level=INFO source=assets.go:123 msg="Updating PATH to C:\\Users\\panda\\AppData\\Local\\Programs\\Ollama\\rocm;D:\\tool\\python\\Scripts\\;D:\\tool\\python\\;D:\\software\\program\\vmware\\bin\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Cloudflare\\Cloudflare WARP\\;D:\\tool\\js\\node\\;D:\\tool\\common\\Git\\cmd;D:\\tool\\java\\gradle-8.7\\bin;D:\\tool\\java\\jdk21\\bin;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;D:\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\dotnet\\;C:\\Users\\panda\\AppData\\Local\\Microsoft\\WindowsApps;D:\\tool\\ide\\Microsoft VS Code\\bin;C:\\Users\\panda\\AppData\\Roaming\\npm;;C:\\Users\\panda\\.dotnet\\tools;C:\\Users\\panda\\.dotnet\\tools"
+time=2024-05-02T09:14:49.518+08:00 level=INFO source=gpu.go:121 msg="Detecting GPU type"
+time=2024-05-02T09:14:49.518+08:00 level=INFO source=gpu.go:268 msg="Searching for GPU management library cudart64_*.dll"
+time=2024-05-02T09:14:49.518+08:00 level=DEBUG source=gpu.go:286 msg="gpu management search paths: [C:\\Users\\panda\\AppData\\Local\\Programs\\Ollama\\cudart64_*.dll c:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v*\\bin\\cudart64_*.dll C:\\Users\\panda\\AppData\\Local\\Programs\\Ollama\\rocm\\cudart64_*.dll* D:\\tool\\python\\Scripts\\cudart64_*.dll* D:\\tool\\python\\cudart64_*.dll* D:\\software\\program\\vmware\\bin\\cudart64_*.dll* C:\\WINDOWS\\system32\\cudart64_*.dll* C:\\WINDOWS\\cudart64_*.dll* C:\\WINDOWS\\System32\\Wbem\\cudart64_*.dll* C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\cudart64_*.dll* C:\\WINDOWS\\System32\\OpenSSH\\cudart64_*.dll* C:\\Program Files\\Cloudflare\\Cloudflare WARP\\cudart64_*.dll* D:\\tool\\js\\node\\cudart64_*.dll* D:\\tool\\common\\Git\\cmd\\cudart64_*.dll* D:\\tool\\java\\gradle-8.7\\bin\\cudart64_*.dll* D:\\tool\\java\\jdk21\\bin\\cudart64_*.dll* C:\\Program Files\\Docker\\Docker\\resources\\bin\\cudart64_*.dll* C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\cudart64_*.dll* D:\\Windows Kits\\10\\Windows Performance Toolkit\\cudart64_*.dll* C:\\Program Files\\dotnet\\cudart64_*.dll* C:\\Users\\panda\\AppData\\Local\\Microsoft\\WindowsApps\\cudart64_*.dll* D:\\tool\\ide\\Microsoft VS Code\\bin\\cudart64_*.dll* C:\\Users\\panda\\AppData\\Roaming\\npm\\cudart64_*.dll* C:\\Users\\panda\\AppData\\Local\\Programs\\Ollama\\cudart64_*.dll* C:\\Users\\panda\\.dotnet\\tools\\cudart64_*.dll* C:\\Users\\panda\\.dotnet\\tools\\cudart64_*.dll*]"
+time=2024-05-02T09:14:49.523+08:00 level=INFO source=gpu.go:314 msg="Discovered GPU libraries: [C:\\Users\\panda\\AppData\\Local\\Programs\\Ollama\\cudart64_110.dll]"
+time=2024-05-02T09:14:49.524+08:00 level=INFO source=gpu.go:343 msg="Unable to load cudart CUDA management library C:\\Users\\panda\\AppData\\Local\\Programs\\Ollama\\cudart64_110.dll: your nvidia driver is too old or missing, please upgrade to run ollama"
+time=2024-05-02T09:14:49.524+08:00 level=INFO source=gpu.go:268 msg="Searching for GPU management library nvml.dll"
+time=2024-05-02T09:14:49.524+08:00 level=DEBUG source=gpu.go:286 msg="gpu management search paths: [c:\\Windows\\System32\\nvml.dll C:\\Users\\panda\\AppData\\Local\\Programs\\Ollama\\rocm\\nvml.dll* D:\\tool\\python\\Scripts\\nvml.dll* D:\\tool\\python\\nvml.dll* D:\\software\\program\\vmware\\bin\\nvml.dll* C:\\WINDOWS\\system32\\nvml.dll* C:\\WINDOWS\\nvml.dll* C:\\WINDOWS\\System32\\Wbem\\nvml.dll* C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\nvml.dll* C:\\WINDOWS\\System32\\OpenSSH\\nvml.dll* C:\\Program Files\\Cloudflare\\Cloudflare WARP\\nvml.dll* D:\\tool\\js\\node\\nvml.dll* D:\\tool\\common\\Git\\cmd\\nvml.dll* D:\\tool\\java\\gradle-8.7\\bin\\nvml.dll* D:\\tool\\java\\jdk21\\bin\\nvml.dll* C:\\Program Files\\Docker\\Docker\\resources\\bin\\nvml.dll* C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\nvml.dll* D:\\Windows Kits\\10\\Windows Performance Toolkit\\nvml.dll* C:\\Program Files\\dotnet\\nvml.dll* C:\\Users\\panda\\AppData\\Local\\Microsoft\\WindowsApps\\nvml.dll* D:\\tool\\ide\\Microsoft VS Code\\bin\\nvml.dll* C:\\Users\\panda\\AppData\\Roaming\\npm\\nvml.dll* C:\\Users\\panda\\AppData\\Local\\Programs\\Ollama\\nvml.dll* C:\\Users\\panda\\.dotnet\\tools\\nvml.dll* C:\\Users\\panda\\.dotnet\\tools\\nvml.dll*]"
+time=2024-05-02T09:14:49.528+08:00 level=INFO source=gpu.go:314 msg="Discovered GPU libraries: []"
+time=2024-05-02T09:14:49.528+08:00 level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-05-02T09:14:49.539+08:00 level=INFO source=amd_windows.go:40 msg="AMD Driver: 50732000"
+time=2024-05-02T09:14:49.539+08:00 level=DEBUG source=amd_common.go:16 msg="evaluating potential rocm lib dir C:\\Users\\panda\\AppData\\Local\\Programs\\Ollama\\rocm"
+time=2024-05-02T09:14:49.539+08:00 level=DEBUG source=amd_windows.go:148 msg="detected ROCM next to ollama executable C:\\Users\\panda\\AppData\\Local\\Programs\\Ollama\\rocm"
+time=2024-05-02T09:14:49.539+08:00 level=DEBUG source=amd_windows.go:66 msg="skipping rocm gfx compatibility check with HSA_OVERRIDE_GFX_VERSION=11.0.2"
+time=2024-05-02T09:14:49.539+08:00 level=INFO source=amd_windows.go:69 msg="detected 1 hip devices"
+time=2024-05-02T09:14:49.539+08:00 level=INFO source=amd_windows.go:87 msg="[0] Name: AMD Radeon RX 6750 GRE 12GB"
+time=2024-05-02T09:14:49.539+08:00 level=INFO source=amd_windows.go:90 msg="[0] GcnArchName: gfx1031"
+time=2024-05-02T09:14:49.831+08:00 level=INFO source=amd_windows.go:117 msg="[0] Total Mem: 12733906944"
+time=2024-05-02T09:14:49.832+08:00 level=INFO source=amd_windows.go:118 msg="[0] Free Mem:  12868124672"
+time=2024-05-02T09:14:49.894+08:00 level=INFO source=server.go:127 msg="offload to gpu" reallayers=29 layers=29 required="5793.7 MiB" used="5793.7 MiB" available="12272.0 MiB" kv="672.0 MiB" fulloffload="506.0 MiB" partialoffload="1127.2 MiB"
+time=2024-05-02T09:14:49.895+08:00 level=DEBUG source=payload.go:68 msg="availableServers : found" file=C:\Users\panda\AppData\Local\Temp\ollama2662093108\runners\cpu
+time=2024-05-02T09:14:49.895+08:00 level=DEBUG source=payload.go:68 msg="availableServers : found" file=C:\Users\panda\AppData\Local\Temp\ollama2662093108\runners\cpu_avx
+time=2024-05-02T09:14:49.895+08:00 level=DEBUG source=payload.go:68 msg="availableServers : found" file=C:\Users\panda\AppData\Local\Temp\ollama2662093108\runners\cpu_avx2
+time=2024-05-02T09:14:49.895+08:00 level=DEBUG source=payload.go:68 msg="availableServers : found" file=C:\Users\panda\AppData\Local\Temp\ollama2662093108\runners\cuda_v11.3
+time=2024-05-02T09:14:49.895+08:00 level=DEBUG source=payload.go:68 msg="availableServers : found" file=C:\Users\panda\AppData\Local\Temp\ollama2662093108\runners\rocm_v5.7
+time=2024-05-02T09:14:49.895+08:00 level=DEBUG source=payload.go:68 msg="availableServers : found" file=C:\Users\panda\AppData\Local\Temp\ollama2662093108\runners\cpu
+time=2024-05-02T09:14:49.895+08:00 level=DEBUG source=payload.go:68 msg="availableServers : found" file=C:\Users\panda\AppData\Local\Temp\ollama2662093108\runners\cpu_avx
+time=2024-05-02T09:14:49.895+08:00 level=DEBUG source=payload.go:68 msg="availableServers : found" file=C:\Users\panda\AppData\Local\Temp\ollama2662093108\runners\cpu_avx2
+time=2024-05-02T09:14:49.895+08:00 level=DEBUG source=payload.go:68 msg="availableServers : found" file=C:\Users\panda\AppData\Local\Temp\ollama2662093108\runners\cuda_v11.3
+time=2024-05-02T09:14:49.895+08:00 level=DEBUG source=payload.go:68 msg="availableServers : found" file=C:\Users\panda\AppData\Local\Temp\ollama2662093108\runners\rocm_v5.7
+time=2024-05-02T09:14:49.895+08:00 level=INFO source=cpu_common.go:11 msg="CPU has AVX2"
+time=2024-05-02T09:14:49.900+08:00 level=DEBUG source=server.go:259 msg="PATH=C:\\Users\\panda\\AppData\\Local\\Programs\\Ollama\\rocm;D:\\tool\\python\\Scripts\\;D:\\tool\\python\\;D:\\software\\program\\vmware\\bin\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Cloudflare\\Cloudflare WARP\\;D:\\tool\\js\\node\\;D:\\tool\\common\\Git\\cmd;D:\\tool\\java\\gradle-8.7\\bin;D:\\tool\\java\\jdk21\\bin;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;D:\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\dotnet\\;C:\\Users\\panda\\AppData\\Local\\Microsoft\\WindowsApps;D:\\tool\\ide\\Microsoft VS Code\\bin;C:\\Users\\panda\\AppData\\Roaming\\npm;;C:\\Users\\panda\\.dotnet\\tools;C:\\Users\\panda\\.dotnet\\tools;C:\\Users\\panda\\AppData\\Local\\Temp\\ollama2662093108\\runners\\rocm_v5.7"
+time=2024-05-02T09:14:49.900+08:00 level=INFO source=server.go:264 msg="starting llama server" cmd="C:\\Users\\panda\\AppData\\Local\\Temp\\ollama2662093108\\runners\\rocm_v5.7\\ollama_llama_server.exe --model C:\\Users\\panda\\.ollama\\models\\blobs\\sha256-ef311de6af9db043d51ca4b1e766c28e0a1ac41d60420fed5e001dc470c64b77 --ctx-size 2048 --batch-size 512 --embedding --log-format json --n-gpu-layers 29 --verbose --port 1910"
+time=2024-05-02T09:14:49.926+08:00 level=INFO source=server.go:389 msg="waiting for llama runner to start responding"
+time=2024-05-02T09:14:49.987+08:00 level=DEBUG source=server.go:420 msg="server not yet available" error="health resp: Get \"http://127.0.0.1:1910/health\": dial tcp 127.0.0.1:1910: connectex: No connection could be made because the target machine actively refused it."
+{"function":"server_params_parse","level":"WARN","line":2494,"msg":"server.cpp is not built with verbose logging.","tid":"14140","timestamp":1714612490}
+{"build":2679,"commit":"7593639","function":"wmain","level":"INFO","line":2820,"msg":"build info","tid":"14140","timestamp":1714612490}
+{"function":"wmain","level":"INFO","line":2827,"msg":"system info","n_threads":6,"n_threads_batch":-1,"system_info":"AVX = 1 | AVX_VNNI = 0 | AVX2 = 0 | AVX512 = 0 | AVX512_VBMI = 0 | AVX512_VNNI = 0 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 1 | SSE3 = 1 | SSSE3 = 1 | VSX = 0 | MATMUL_INT8 = 0 | ","tid":"14140","timestamp":1714612490,"total_threads":12}
+llama_model_loader: loaded meta data with 24 key-value pairs and 254 tensors from C:\Users\panda\.ollama\models\blobs\sha256-ef311de6af9db043d51ca4b1e766c28e0a1ac41d60420fed5e001dc470c64b77 (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = gemma
+llama_model_loader: - kv   1:                               general.name str              = gemma-1.1-7b-it
+llama_model_loader: - kv   2:                       gemma.context_length u32              = 8192
+llama_model_loader: - kv   3:                     gemma.embedding_length u32              = 3072
+llama_model_loader: - kv   4:                          gemma.block_count u32              = 28
+llama_model_loader: - kv   5:                  gemma.feed_forward_length u32              = 24576
+llama_model_loader: - kv   6:                 gemma.attention.head_count u32              = 16
+llama_model_loader: - kv   7:              gemma.attention.head_count_kv u32              = 16
+llama_model_loader: - kv   8:     gemma.attention.layer_norm_rms_epsilon f32              = 0.000001
+llama_model_loader: - kv   9:                 gemma.attention.key_length u32              = 256
+llama_model_loader: - kv  10:               gemma.attention.value_length u32              = 256
+llama_model_loader: - kv  11:                          general.file_type u32              = 2
+llama_model_loader: - kv  12:                       tokenizer.ggml.model str              = llama
+llama_model_loader: - kv  13:                      tokenizer.ggml.tokens arr[str,256000]  = ["<pad>", "<eos>", "<bos>", "<unk>", ...
+llama_model_loader: - kv  14:                      tokenizer.ggml.scores arr[f32,256000]  = [0.000000, 0.000000, 0.000000, 0.0000...
+llama_model_loader: - kv  15:                  tokenizer.ggml.token_type arr[i32,256000]  = [3, 3, 3, 2, 1, 1, 1, 1, 1, 1, 1, 1, ...
+llama_model_loader: - kv  16:                tokenizer.ggml.bos_token_id u32              = 2
+llama_model_loader: - kv  17:                tokenizer.ggml.eos_token_id u32              = 1
+llama_model_loader: - kv  18:            tokenizer.ggml.unknown_token_id u32              = 3
+llama_model_loader: - kv  19:            tokenizer.ggml.padding_token_id u32              = 0
+llama_model_loader: - kv  20:               tokenizer.ggml.add_bos_token bool             = true
+llama_model_loader: - kv  21:               tokenizer.ggml.add_eos_token bool             = false
+llama_model_loader: - kv  22:                    tokenizer.chat_template str              = {{ bos_token }}{% if messages[0]['rol...
+llama_model_loader: - kv  23:               general.quantization_version u32              = 2
+llama_model_loader: - type  f32:   57 tensors
+llama_model_loader: - type q4_0:  196 tensors
+llama_model_loader: - type q6_K:    1 tensors
+time=2024-05-02T09:14:50.235+08:00 level=DEBUG source=server.go:420 msg="server not yet available" error="server not responding"
+llm_load_vocab: mismatch in special tokens definition ( 416/256000 vs 260/256000 ).
+llm_load_print_meta: format           = GGUF V3 (latest)
+llm_load_print_meta: arch             = gemma
+llm_load_print_meta: vocab type       = SPM
+llm_load_print_meta: n_vocab          = 256000
+llm_load_print_meta: n_merges         = 0
+llm_load_print_meta: n_ctx_train      = 8192
+llm_load_print_meta: n_embd           = 3072
+llm_load_print_meta: n_head           = 16
+llm_load_print_meta: n_head_kv        = 16
+llm_load_print_meta: n_layer          = 28
+llm_load_print_meta: n_rot            = 192
+llm_load_print_meta: n_embd_head_k    = 256
+llm_load_print_meta: n_embd_head_v    = 256
+llm_load_print_meta: n_gqa            = 1
+llm_load_print_meta: n_embd_k_gqa     = 4096
+llm_load_print_meta: n_embd_v_gqa     = 4096
+llm_load_print_meta: f_norm_eps       = 0.0e+00
+llm_load_print_meta: f_norm_rms_eps   = 1.0e-06
+llm_load_print_meta: f_clamp_kqv      = 0.0e+00
+llm_load_print_meta: f_max_alibi_bias = 0.0e+00
+llm_load_print_meta: f_logit_scale    = 0.0e+00
+llm_load_print_meta: n_ff             = 24576
+llm_load_print_meta: n_expert         = 0
+llm_load_print_meta: n_expert_used    = 0
+llm_load_print_meta: causal attn      = 1
+llm_load_print_meta: pooling type     = 0
+llm_load_print_meta: rope type        = 2
+llm_load_print_meta: rope scaling     = linear
+llm_load_print_meta: freq_base_train  = 10000.0
+llm_load_print_meta: freq_scale_train = 1
+llm_load_print_meta: n_yarn_orig_ctx  = 8192
+llm_load_print_meta: rope_finetuned   = unknown
+llm_load_print_meta: ssm_d_conv       = 0
+llm_load_print_meta: ssm_d_inner      = 0
+llm_load_print_meta: ssm_d_state      = 0
+llm_load_print_meta: ssm_dt_rank      = 0
+llm_load_print_meta: model type       = 7B
+llm_load_print_meta: model ftype      = Q4_0
+llm_load_print_meta: model params     = 8.54 B
+llm_load_print_meta: model size       = 4.66 GiB (4.69 BPW) 
+llm_load_print_meta: general.name     = gemma-1.1-7b-it
+llm_load_print_meta: BOS token        = 2 '<bos>'
+llm_load_print_meta: EOS token        = 1 '<eos>'
+llm_load_print_meta: UNK token        = 3 '<unk>'
+llm_load_print_meta: PAD token        = 0 '<pad>'
+llm_load_print_meta: LF token         = 227 '<0x0A>'
+
+rocBLAS error: Cannot read C:\Users\panda\AppData\Local\Programs\Ollama\rocm\/rocblas/library/TensileLibrary.dat: No such file or directory for GPU arch : gfx1031
+ List of available TensileLibrary Files : 
+time=2024-05-02T09:14:50.580+08:00 level=DEBUG source=server.go:420 msg="server not yet available" error="health resp: Get \"http://127.0.0.1:1910/health\": read tcp 127.0.0.1:1917->127.0.0.1:1910: wsarecv: An existing connection was forcibly closed by the remote host."
+time=2024-05-02T09:14:50.641+08:00 level=ERROR source=routes.go:120 msg="error loading llama server" error="llama runner process no longer running: 3221226505 error:Cannot read C:\\Users\\panda\\AppData\\Local\\Programs\\Ollama\\rocm\\/rocblas/library/TensileLibrary.dat: No such file or directory for GPU arch : gfx1031"
+time=2024-05-02T09:14:50.641+08:00 level=DEBUG source=server.go:832 msg="stopping llama server"
+[GIN] 2024/05/02 - 09:14:50 | 500 |    4.1750711s |       127.0.0.1 | POST     "/api/chat"
